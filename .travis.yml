@@ -8,16 +8,16 @@ android:
   components:
     - platform-tools
     - tools
-    - build-tools-24.0.2
-    - android-24
+    - build-tools-26.0.0
+    - android-26
     - extra-android-m2repository     # Android Support Repository
     - extra-android-support          # Support Library
     - sys-img-armeabi-v7a-android-22
     - extra-android-m2repository
   licenses:
-    - 'android-sdk-preview-license-.+'
-    - 'android-sdk-license-.+'
-    - 'google-gdk-license-.+'
+      - 'android-sdk-preview-license-.+'
+      - 'android-sdk-license-.+'
+      - 'google-gdk-license-.+'
 
 before_install:
  - chmod +x gradlew
