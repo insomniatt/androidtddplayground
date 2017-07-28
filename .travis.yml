@@ -1,7 +1,6 @@
 language: android
 #jdk: oraclejdk8
-#sudo: false
-
+sudo: required
 
 
 android:
@@ -9,10 +8,18 @@ android:
     - platform-tools
     - tools
     - build-tools-24.0.2
-    - android-22
     - android-24
+    - extra-android-m2repository     # Android Support Repository
+    - extra-android-support          # Support Library
     - sys-img-armeabi-v7a-android-22
     - extra-android-m2repository
+  licenses:
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
+
+before_install:
+ - chmod +x gradlew
 
 #before_script:
 #  # Create and start emulator
