@@ -30,5 +30,5 @@ before_install:
 #  - adb shell input keyevent 82 &
 
 script:
-- "./gradlew clean build connectedCheck -PdisablePreDex --stacktrace"
+- ./gradlew assembleRelease
 #script: ./gradlew connectedAndroidTest
